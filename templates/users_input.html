@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>User {{ user_num }}: Share Your Sentiments</h2>
+    <form method="POST">
+        {% for product in products %}
+            <label for="{{ product }}">{{ product }}</label>
+            <textarea name="{{ product }}" rows="2" cols="50" required></textarea><br><br>
+        {% endfor %}
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
+

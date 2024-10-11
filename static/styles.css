@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+    font-family: 'Merriweather', Georgia, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Soft background */
+    color: #333; /* Softer text color */
+}
+
+header {
+    background-color: #fafafa; /* Light neutral color for header */
+    padding: 1.5em;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header nav a {
+    color: #555; /* Softer link color */
+    margin: 0 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em; /* Larger font size for elegance */
+}
+
+header nav a:hover {
+    color: #999; /* Muted hover effect */
+    text-decoration: underline;
+}
+
+main {
+    padding: 3em;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adding shadow for elegance */
+}
+
+footer {
+    background-color: #fafafa;
+    padding: 2em;
+    text-align: center;
+    color: #777;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #555;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #999;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    main {
+        padding: 2em;
+    }
+
+    header nav a {
+        display: block;
+        margin: 1em 0;
+    }
+}

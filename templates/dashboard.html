@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Sentiment Analysis Dashboard</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Positive Reviews</th>
+                <th>Negative Reviews</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+                <tr>
+                    <td>{{ product }}</td>
+                    <td>{{ sentiments[product]['positive'] }}</td>
+                    <td>{{ sentiments[product]['negative'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+
